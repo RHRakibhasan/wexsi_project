@@ -1,0 +1,47 @@
+.rkb_give_card{
+    padding: 50px 75px;
+    width: 310px;
+    background: $white;
+    border-radius: 15px;
+    box-shadow:0px 10px 35px #8370ff27;
+    display: block;
+    margin: 0 auto;
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.76, 0.13, 0.37, 0.99);
+    margin-bottom: 30px;
+    @media #{$tab} {
+        width: auto;
+        
+    } 
+    &:hover{ 
+        box-shadow:0px 10px 35px #8370ff62;
+        transform: scale(1.1);
+        @media #{$tab} {
+            transform: scale(1);
+        }
+        
+        @media #{$medium_device} {
+            transform: scale(1); 
+        }
+    }
+    .rkb_give_card_icon{
+        background: #E7DEFF;
+        height: 107px;
+        width: 107px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .rkb_give_card_title{
+        line-height: 1.23;
+        font-weight: 700;
+        margin-top: 25px;
+    }
+}
+.rkb_give_card_bg{
+    @media #{$tab} {
+       background-position: left;
+    } 
+}

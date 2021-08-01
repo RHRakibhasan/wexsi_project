@@ -1,0 +1,93 @@
+.rkb_hero_area{
+    background:  url(../img/bg/hero_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover; 
+    position: relative; 
+    overflow: hidden; 
+    &::after{
+        position: absolute;
+        z-index:-11111;
+        content: "";
+        height:35%;
+        background:url(../img/shape/web-d.png);
+        background-repeat:repeat-x;
+        background-size: cover; 
+        background-position: bottom; 
+        bottom: 0;
+        left: 0px;
+        right: 0;  
+        animation: wev_first linear 14s infinite;
+    }
+    &::before{
+        position: absolute;
+        z-index:-11111;
+        content: "";
+        height:35%;
+        background:url(../img/shape/web-d.png);
+        background-repeat: repeat-x;
+        background-size: cover; 
+        background-position: bottom; 
+        bottom: 0;
+        left:-40%;
+        right: 0; 
+        animation: wev_sec linear 10s infinite; 
+    }
+}
+.hero_wrapper_2 {
+    padding: 160px 0 0 0;
+    @media #{$tab} { 
+        padding: 160px 0;
+    }    
+    @media #{$large_mobile} { 
+    }    
+    @media #{$medium_device} {  
+   }
+   .rkb_hero_contant{
+    @media #{$tab} { 
+        margin-top: 30px;
+    }
+   }
+}
+.hero_wrapper {
+    padding: 150px 0;
+
+    .rkb_hero_contant{
+        min-height: 327px; 
+        .rkb_hero_title{
+            color: $white;
+            line-height: 1.05;  
+        }
+        .rkb_hero_description{
+            color: $white;
+            margin-bottom: 35px;
+            line-height: 1;
+            @media #{$tab} {
+                line-height: 1.4;
+           }
+           @media #{$medium_device} {
+                line-height: 1.4;
+           }
+        }
+    } 
+    
+}
+ 
+// wev_keyframes here ---------------------------------------------------------------- 
+@keyframes wev_first {
+    0%{ 
+        background-position: left 1920px bottom 0px;
+    } 
+    100%{ 
+        background-position: left 0px bottom 0px;
+    }
+}
+@keyframes wev_sec {
+    0%{ 
+        background-position: left 1920px bottom 0px;
+    } 
+    100%{ 
+        background-position: left 0px bottom 0px;
+    }
+}
+//  responsive scss 

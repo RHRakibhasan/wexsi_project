@@ -1,0 +1,106 @@
+button:active {
+    outline: none;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+.rkb_btn_primary {
+    display: inline-block; 
+    padding: 12px 42px; 
+    font-size: 18px;
+    text-align: center;
+    font-family: "Proxima Nova Rg", "Open Sans", sans-serif;
+    font-weight: 700;
+    border: 2px solid;
+    border-radius: 33px;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
+    @media #{$tab} {
+        display: block;
+        border-radius: 10px;
+    }
+    &.btn_1 {
+        border-color: $white;
+        color: $white;
+        transition: all 0.5s ease-in-out;
+        margin-right: 30px;
+        @media #{$tab} {
+            margin: 0;
+        }
+        @media #{$medium_device} {
+            margin: 0;
+        }
+        &:hover {
+            background: $white;
+            color: $color_002;
+            border-color: $white;
+        }
+    }
+    &.btn_2 {
+        background: $white;
+        color: $color_002;
+        border-color: $white;
+        transition: all 0.5s ease-in-out;
+        margin: 0;
+        &:hover {
+            background: transparent;
+            color: $white;
+        }
+    }
+    &.btn_2.btn_3 {
+        margin-left: 0;
+        margin-right: 30px;
+        @media #{$tab} {
+            margin: 0 0 20px 0;
+        }
+    }
+    &.btn_4 {
+        background: linear-gradient(to right, $gradient-030, $gradient-6f3);
+        border-color: linear-gradient(to right, $gradient-030, $gradient-6f3);
+        color: $white;
+        transition: all 0.5s ease-in-out;
+        &:hover {
+            border-color: linear-gradient(to left, $gradient-030, $gradient-6f3);
+            background: linear-gradient(to left, $gradient-030, $gradient-6f3);
+        }
+    }
+    &.btn_5 {
+        border-color: $color-002;
+        color: $color-002;
+        background: transparent;
+        transition: all 0.5s ease-in-out;
+        padding: 12px 52px;
+        &:hover {
+            background: linear-gradient(to right, $gradient-030, $gradient-6f3);
+            border-color: transparent;
+            color: $white;
+            box-shadow: 0px 6px 15px #8370ff79;
+        }
+    }
+    &.btn_6 {
+        background: linear-gradient(to right, $gradient-030, $gradient-6f3);
+        border-color: transparent;
+        color: $white;
+        box-shadow: 0px 6px 15px #8370ff79;
+        transition: all 0.5s ease-in-out;
+        padding: 12px 52px;
+        &:hover {
+            border-color: $color-002;
+            color: $color-002;
+            background: transparent;
+        }
+    } 
+}
+.rkb_forom_contol_btn{
+    border-radius: 38px;
+    background: $color-002 ;
+    border:0 none ;
+    box-shadow: 0px 6px 15px #8370ff52;
+    display: block;
+    min-height:70px;
+    color: $white;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}

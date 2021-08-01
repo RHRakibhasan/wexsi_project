@@ -1,0 +1,29 @@
+/*----------------------------------------------------
+@File: Default Styles
+
+This file contains the styling for the actual template, this
+is the file you need to edit to change the look of the
+template.
+---------------------------------------------------- */
+/*=====================================================================
+@Template Name: 
+@Author: 
+@Developed By: 
+@Developer URL: 
+Author E-mail: 
+
+@Default Styles
+
+Table of Content:
+01/ Variables
+02/ mixins
+03/ reset
+04/ button
+05/ tooltip
+=====================================================================*/ 
+
+//reset scss
+@import "reset/all";
+
+// section scss 
+@import "section/all";

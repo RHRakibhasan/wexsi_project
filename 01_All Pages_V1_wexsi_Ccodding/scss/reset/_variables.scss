@@ -1,0 +1,54 @@
+$fm-proxima-nova:'Proxima Nova Rg','Open Sans', sans-serif;
+ 
+// color -----
+$white:#ffffff;
+$color-f1e:#F1EFFF;
+$color-ff2:#FF2323;
+$color-ff8:#FF8C19; 
+$color-002:#00247A;
+$color-00d:#00D407; 
+$color_d0c:#D0C1F8;
+$color-ddd:#DDDDDD;
+$gradient-030:#030878;
+$color-cbc:#CBCBCB;
+$color-C1C:#C1C1C1;
+$color-6f3:#6F3FEA;
+$color-647:#647589;
+$gradient-6f3:#6F3FEA;
+
+//typography
+$h1_font_size: 85px;
+$h2_font_size: 50px;
+$h3_font_size: 35px;
+$h4_font_size: 30px;
+$para_font_size:20px;
+$h5_font_size: 24px;
+$h6_font_size: 18px;
+$span_font_size: 14px;
+
+//font line height
+$body_line_height: 28px;
+$h1_line_height: 1.3;
+$h2_line_height: 1.3;
+$h3_line_height: 1s;
+$h4_line_height: 1;
+$h5_line_height: 1;
+
+//font weight
+$font_extra_bold: 900;
+$font_bold: 700;
+$font_semi_bold: 600;
+$font_medium: 500;
+$font_ragular: 400;
+$font_light: 300;
+
+// ---------------------device width---------------------------------
+$big_device: '(min-width: 991px)';
+$tab: '(max-width: 991px)';
+$mobile:'(max-width: 767.98px)';
+$xs_mobile:'(max-width: 576px)';
+$extra_big_screen: 'only screen and (min-width: 1441px) and (max-width: 1680px)';
+$big_screen:'only screen and (min-width: 1200px) and (max-width: 1441px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1199.98px)';
+$tab_device:'only screen and (min-width: 768px) and (max-width: 991.98px)';
+$large_mobile: 'only screen and (min-width: 576px) and (max-width: 767.98px)';

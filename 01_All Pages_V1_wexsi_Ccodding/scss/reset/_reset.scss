@@ -1,0 +1,263 @@
+body {
+    font-family:$fm-proxima-nova;
+    padding: 0;
+    margin: 0; 
+    letter-spacing: 0em;
+    overflow-x: hidden;
+}
+ul,ol{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+// all heading_ancor_peragraph common scss ----------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-002;
+    font-family: $fm-proxima-nova;
+    font-weight:$font_bold;
+} 
+h1 {
+    font-size: $h1_font_size;
+    font-weight: $font_bold;
+    @media #{$tab} {
+         font-size: 44px;
+    }
+    @media #{$medium_device} {
+         font-size: 55px;
+    }
+    @media #{$big_screen} {
+         font-size: 65px;
+    }
+} 
+h2 {
+    font-size: $h2_font_size;
+    font-weight: $font_bold;
+    @media #{$tab} {
+        font-size: 30px; 
+    }
+    @media #{$big_screen} {
+        font-size: 45px;
+   }
+} 
+h3 {
+    font-size: $h3_font_size;
+    font-weight: $font_semi_bold;
+    @media #{$tab} {
+        font-size: 30px; 
+    }
+} 
+h4 {
+    font-size: $h4_font_size;
+    font-weight: $font_medium;
+} 
+h5 {
+    font-size: $h5_font_size;
+    font-weight: $font_medium;
+}
+h6 {
+    font-size: $h6_font_size;
+    font-weight: $font_semi_bold;
+} 
+p { 
+    font-size: $para_font_size;
+    margin-bottom: 0px;
+    color:$color-647;
+    font-family:$fm-proxima-nova;
+    font-weight: $font_ragular;
+    line-height: 32px;
+    @media #{$tab} {
+        font-size: 18px; 
+   }
+}
+a {
+    text-decoration: none;
+    @include transform_time(.3s);
+
+    &:hover {
+        text-decoration: none;
+    }
+} 
+input:hover,
+a:focus,
+.button:focus,
+button:focus,
+.btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    -webkit-transition: all .25s cubic-bezier(.645, .045, .355, 1);
+    transition: all .25s cubic-bezier(.645, .045, .355, 1);
+}
+input:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 0px 0px transparent;
+}
+
+:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+.custom-file-input:focus~.custom-file-label {
+    border-color: transparent;
+    box-shadow: none;
+} 
+// all common padding here-------------------------------------------------------------------- 
+.rkb_section_padding{
+    padding-top:130px;
+    padding-bottom:80px ;
+    @media #{$tab} {
+        padding: 50px 0 50px 0 ; 
+    }
+    @media #{$medium_device} {
+        padding-top: 100px ;
+        padding-bottom:50px;
+    }
+}
+.rkb_section_padding_2{
+    padding: 90px 0;
+    .rkb_section_title{
+        margin: 0;
+        padding: 0;
+    }
+}
+.rkb_section_padding_75{
+    padding: 75px 0;
+    .rkb_section_title{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.rkb_padding_top_130 {
+    padding-top: 130px;
+
+    @media #{$tab} {
+        padding-top: 0px;
+    }
+
+    @media #{$medium_device} {
+        padding-top:0px;
+    }
+}
+
+.rkb_padding_bottom {
+    padding-bottom: 130px;
+
+    @media #{$tab} {
+        padding-bottom: 70px;
+    }
+
+    @media #{$medium_device} {
+        padding-bottom: 100px;
+    }
+}
+.rkb_mt_n100 {
+    margin-top:-100px;
+
+    @media #{$tab} {
+        margin-top: 0;
+    }
+
+    @media #{$medium_device} { 
+        margin-top: 0;
+    }
+}  
+// container design here -----------------------------------------------------------------------------
+@media (min-width: 1440px) {
+    .rkb_custom_container {
+        max-width: 1350px;
+    }
+}
+@media (min-width: 1440px) {
+    .container_1076 {
+        max-width: 1106px; 
+    }
+} 
+@media (min-width: 1440px) {
+    .container_1680 {
+        max-width: 1710px; 
+    }
+} 
+// section title common design here-------------------------------------------------------------------- 
+.rkb_section_title { 
+    padding-top: 110px;
+    margin-bottom:50px; 
+    @media #{$tab} {
+        padding-top: 50px;
+    }
+    .rkb_title_heading{
+        margin-bottom:10px;
+    }
+    .title {
+        font-size: $h2_font_size;
+        margin-bottom:25px;
+
+        span {
+            font-weight: $font_bold;
+        }
+
+        @media #{$tab} {
+            font-size: 35px;
+        }
+
+        @media #{$medium_device} {
+            font-size: 35px;
+        }
+    }
+
+    .description {
+        margin-top: 15px;
+    }
+}
+.rkb_section_title.rkb_section_title_2{
+    padding-top: 0;
+}
+// review design stars here ---------------------------------------------------------------------------  
+.rkb_stars{
+    margin-bottom: 10px;
+    .fa-star{
+        color: $color-cbc;
+        font-size: 18px;
+        margin-right:2px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .checked {
+        color: $color-ff8;
+    }  
+}
+// common line brake design here-----------------------------------------------------------------------
+br{
+    @media #{$tab} {
+        display: none;
+    }
+    @media #{$medium_device} {
+        display: none;
+    }
+    @media #{$big_screen} {
+        display: none;
+    }
+    
+}
+// common placeholder scss-----------------------------------------------------------------------------
+::-webkit-input-placeholder { /* Edge */
+    color: #647589;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #647589;
+  }
+  
+  ::placeholder {
+    color: #647589;
+  }
+/**************** common css end ****************/

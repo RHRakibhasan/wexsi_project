@@ -1,0 +1,30 @@
+.rkb_pricing_textbox_list {
+    margin: 30px 0 40px 0;
+    .rkb_pricing_textbox_li {
+        padding-left:30px;
+        position: relative;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        .fa-check-circle {
+            position: absolute;
+            top: 4px;
+            left: 2px;
+            font-size: 20px;
+            color: $gradient-6f3;
+        }
+        .rkb_pricing_textbox_h5 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .rkb_pricing_textbox_h6 {
+            font-weight: 400;
+            line-height: 1.7;
+            color: $color-647;
+        }
+    }
+}
+.rkb_pricing_text_img{
+    margin-bottom: 30px;
+}

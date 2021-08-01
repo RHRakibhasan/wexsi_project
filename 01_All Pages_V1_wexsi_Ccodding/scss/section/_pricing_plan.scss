@@ -1,0 +1,131 @@
+.rkb_pricing_area{
+    background:url(../img/bg/pricing-bg.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat; 
+    position: relative; 
+        @media #{$tab} {
+            margin-top:-100px; 
+        } 
+    .rkb_section_title{ 
+        @media #{$tab} {
+            padding-top: 225px;
+        }
+    }
+    &::before{
+        z-index: -111;
+        position: absolute;
+        content: "";
+        height: 25%;
+        width: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        background:  url(../img/shape/web-d.png);
+        transform: rotate(180deg); 
+        background-size: cover;
+        animation: wev_first linear 7s infinite; 
+        @media #{$tab} {
+            top: 50px;
+       }
+       @media #{$medium_device} {
+            top: 50px;
+        }
+        @media #{$big_screen} {
+           top: 50px;
+        }
+    }
+    &::after { 
+        z-index: -111;
+        position: absolute;
+        content: "";
+        height: 25%;
+        width: 100;
+        top: 0;
+        left: 0;
+        right: 0;
+        background:  url(../img/shape/web-d.png);
+        transform: rotate(180deg);
+        background-size: cover;
+        animation: wev_sec linear 5s  infinite  ; 
+         
+        @media #{$tab} {
+            top: 50px;
+       }
+       @media #{$medium_device} {
+            top: 50px;
+        }
+        @media #{$big_screen} {
+           top: 50px;
+        }
+    }
+} 
+
+.rkb_pricing_box.rkb_pricing_box_2{
+    @media (min-width: 1440px) {
+        max-width: 100%;
+    }
+}
+.rkb_pricing_box {
+    padding: 50px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 35px #8370ff51;
+    border-bottom: 12px solid #6f3fea5e;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: -100px;
+    @media #{$tab} {
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1440px) {
+        max-width: 58%;
+    } 
+    &:hover{
+        border-bottom: 12px solid #6F3FEA;
+
+    }
+    .rkb_pricing_box_title{
+        border-bottom: 1px solid $color-ddd; 
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+        .rkb_pricing_box_span{
+            color: $color-6f3;
+            font-size: 24px;
+            font-weight: $font_bold; 
+            letter-spacing: 5px;
+            text-transform: uppercase; 
+            line-height: 1;
+            @media #{$tab} {
+                font-size: 20px; 
+            }
+        }
+        .rkb_pricing_box_heading{
+            margin:14px 0 30px 0; 
+        } 
+    }
+    .rkb_pricing_list {
+        min-height: 220px;
+        .rkb_pricing_ul{
+            .rkb_pricing_li{
+                padding-left: 30px;
+                line-height: 1.388;
+                font-size: 18px;
+                margin-bottom: 20px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                .rkb_check{
+                    margin-left: -30px;
+                    color: $color-00d;
+                    font-size: 17px;
+                    margin-right: 6px;
+                }
+                .rkb_times{
+                    margin-left: -30px;
+                    color:  $color-ff2;
+                    font-size: 17px;
+                    margin-right: 6px;
+                }
+            }
+        }  
+    }  
+}

@@ -1,0 +1,25 @@
+// Index page scss start 
+//header scss
+@import "header";
+// hero scss
+@import "hero";
+//look scss
+@import "text_box";
+// pricing_plan scss 
+@import "pricing_plan";
+// client_section scss
+@import "client_section";
+//footer
+@import "footer"; 
+// About page scss start 
+@import "about_page/about_all"; 
+// promise page scss start 
+@import "our_promise/our_promise_all";
+//  pricing page scss start 
+@import "pricing_page/pricing_all";
+// FAQ page scss start 
+@import "FAQ_page/all.scss";
+// contact page scss start 
+@import "contact_page/all";
+// progress page scss start 
+@import "progress_page/all";

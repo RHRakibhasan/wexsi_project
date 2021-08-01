@@ -1,0 +1,96 @@
+.rkb_contact_form{
+    background: $white;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px #8370ff38;
+    padding:50px 35px 65px 35px;
+    border-bottom: 10px solid $gradient-6f3 ;
+    @media (min-width: 1440px) {
+        max-width: 549px;
+        margin: 0 auto; 
+    }
+    @media #{$tab} { 
+        padding:30px 15px;
+        margin-bottom: 30px;
+    }
+
+    @media #{$medium_device} { 
+    } 
+    .rkb_section_title{
+        margin: 0 0 40px 0;
+        padding: 0;
+    }
+    .rkb_contact_main_form{
+        .rkb_contact_info{
+            display: block;
+            width: 100%;
+            height: 75px;
+            border-radius: 45px;
+            background: $color-f1e;
+            padding: 25px 30px;
+            font-size:20px;
+            color: #647589;
+            margin-bottom: 25px;
+            border:0;
+            font-weight: 400;
+            @media #{$tab} { 
+                border-radius: 15px;
+                padding:12px 15px;
+                font-size: 16px;
+                height: 60px;
+            }
+    
+            @media #{$medium_device} { 
+            }
+        }
+        .rkb_contact_message{ 
+            height:190px;
+            border-radius: 10px;
+            @media #{$tab} { 
+                height:95px ;
+            } 
+            @media #{$medium_device} { 
+            }
+        }
+        
+    }
+}
+.rkb_contact_form_right_info{ 
+    .rkb_contact_address{
+        margin-top: 40px; 
+        @media #{$tab} { 
+            margin-top: 20px;
+        }
+
+        @media #{$medium_device} { 
+        }
+        .rkb_contact_right_title{
+            @media #{$tab} { 
+                font-size: 25px; 
+            }
+        }
+        .rkb_contact_address{
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 1.21; 
+            color: $color-002;
+            @media #{$tab} { 
+                font-size: 20px; 
+            }
+    
+            @media #{$medium_device} { 
+            }
+        }
+        .rkb_contact_address_p{
+            margin: 18px 0;
+            color: $color-647; 
+            font-weight: 600;
+            @media #{$tab} { 
+                margin:9px;
+                font-size: 16px; 
+            }
+    
+            @media #{$medium_device} { 
+            }
+        }
+    }
+}

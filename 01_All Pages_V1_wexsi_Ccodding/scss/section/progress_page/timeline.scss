@@ -1,0 +1,111 @@
+.rkb_timeline_section_padding{
+    padding: 90px 0;
+}
+.rkb_timeline_inner_bar {
+    position: relative;
+    &::before {
+        content: "";
+        position:absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 18px;
+        background: $color_d0c; 
+        border-radius: 12px;
+        margin: 0 auto;  
+        z-index: -1;
+        @media #{$tab} { 
+            right: auto;
+            left:35px;
+            margin: 0;
+        }
+        @media #{$tab_device} {
+            right: 0;
+            left: 0;
+            margin: 0 auto; 
+        }
+    }
+}
+.rkb_timeline_wrapper { 
+    padding-top: 50px;  
+    .rkb_timeline_thumb_right{
+        margin-left: 80px; 
+        @media #{$tab} { 
+            margin: 0 0 0 40px;
+        }
+        @media #{$tab_device} { 
+        }
+    }
+    .rkb_timeline_thumb_left{
+        @media #{$tab} { 
+            margin: 0 0 0 40px;
+        }
+        @media #{$tab_device} { 
+            margin: 0 40px 0 0;
+        }
+        @media #{$medium_device} { 
+            margin: 0 40px 0 0;
+        }
+    }
+    .rkb_timeline_content_right {
+        padding-left: 80px;
+        @media #{$tab} { 
+            padding: 0 0 30px 65px;
+        }
+        @media #{$tab_device} { 
+        }
+        position: relative;   
+        .rkb_timeline_counter {
+            position: absolute;
+            left:-45px;
+            top: 0;
+            height: 66px;
+            width:66px;
+            background: linear-gradient(to right, #030878, #6F3FEA);
+            border-radius:50%;
+            color:#fff;
+            font-size:32px; 
+            font-weight: 700;
+            border: 9px solid $color_d0c;   
+            text-align: center;
+            @media #{$tab} { 
+                left: 0;
+                top: -50px;
+            }
+            @media #{$tab_device} { 
+                left: -45px;
+            }  
+        }
+        .rkb_timeline_title {
+            font-size: 40px;
+            @media #{$tab} { 
+                font-size: 24px; 
+            } 
+            @media #{$medium_device} { 
+                font-size: 25px;
+            }
+        } 
+    }
+    .rkb_timeline_content_left{
+        padding: 0 80px 0 0;  
+        @media #{$tab} { 
+            padding: 0 0 30px 65px;
+        }
+        @media #{$tab_device} { 
+            padding: 0 65px 30px 0;
+        }
+        .rkb_timeline_counter{
+            left: auto;
+            right: -45px; 
+            @media #{$tab} { 
+                right: auto;
+                left: 0;
+            }
+            @media #{$tab_device} { 
+                left: auto;
+                right: -45px;
+            }
+        }
+    }
+}

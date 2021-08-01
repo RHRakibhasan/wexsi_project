@@ -1,0 +1,67 @@
+.rkb_faq_accordient {
+    .accordion {
+        .accordion-item {
+            margin-bottom: 30px;
+            border: none;
+            .accordion-header {
+                .accordion-button {
+                    border-radius: 15px;
+                    box-shadow: 0 8px 25px #8370ff2f;
+                    color: $color-002;
+                    font-size: 28px;
+                    font-weight: 600;
+                    padding: 22px;
+                    @media #{$tab} {
+                        font-size: 16px;
+                        padding:20px 10px;
+                    } 
+                    &::after{
+                        background-image: url(/img/icon/ionic-ios-arrow-down.png);
+                    }
+                    &:not(.collapsed){
+                        background:$gradient-6f3;
+                        border-radius:15px 15px 0 0;
+                        box-shadow:none;
+                        color:$white;
+                        padding-bottom: 15px;
+                        &::after {
+                             background-image: url(/img/icon/ionic-ios-arrow-up.png);
+                             transform: rotate(0);
+                        }
+                        .accordion_header_span{
+                            background:  $white;
+                            color:$gradient-6f3;
+                            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease; 
+                        }
+                    }
+                    .accordion_header_span {
+                        height: 46px;
+                        width: 46px;
+                        background: $gradient-6f3;
+                        text-align: center;
+                        line-height: 46px;
+                        color: $white;
+                        font-size: 28px;
+                        font-weight: 600;
+                        border-radius: 8px;
+                        margin-right: 29px;
+                        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+                        @media #{$tab} {
+                            font-size: 16px;
+                            margin-right: 10px;
+                            height: 30px;
+                            width: 30px;
+                            line-height: 30px;
+                        }  
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            padding: 0 88px 38px 88px;
+            background:$gradient-6f3;
+            color: #ffffffce;
+            border-radius: 0 0 15px 15px;
+        }
+    }
+}

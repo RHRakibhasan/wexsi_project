@@ -1,0 +1,28 @@
+.rkb_promise_text_box{
+    @media #{$tab} { 
+        margin: 0 0 30px 0;
+    }
+
+    @media #{$medium_device} {
+        margin:  0 0 60px 0; 
+    }
+    .promise_text_box_title{
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1.22; 
+        margin-bottom: 20px;
+    }
+    .promise_text_box_description{
+        margin-bottom: 35px;
+    }
+     
+}
+.rkb_promise_text_box_thumb{
+    @media #{$tab} { 
+        margin: 0 0 30px 0;
+    }
+
+    @media #{$medium_device} {
+        margin:  0 0 60px 0; 
+    }
+}

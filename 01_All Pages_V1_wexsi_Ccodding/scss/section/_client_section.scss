@@ -1,0 +1,40 @@
+.rkb_clint_wrapper{
+    box-shadow: 0px 8px 25px #8370ff1e;
+    border-radius: 10px;
+    background:  $white;
+    padding:35px 30px ;
+    margin: 20px;
+    @media #{$xs_mobile} {
+        margin: 0 0 30px 0;
+    }
+    
+    .rkb_client_heading{
+        margin-bottom: 20px;
+    }
+    .rkb_client_desc{
+        font-size:16px;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    .rkb_client_title{
+        
+        .rkb_client_title_span{
+            font-size: 16px;
+            color:$color-647;
+        }
+    }
+} 
+@media (min-width: 1440px) {
+    .rkb_clint_wrapper.mt-xl-60{
+        margin-top: 60px;
+    }
+     .rkb_clint_wrapper.mt-xl-30{
+        margin-top: 30px;
+    } 
+    .rkb_clint_wrapper.mt-xl-n10{
+        margin-top: -10px;
+    }
+    .rkb_clint_wrapper.mt-xl-n20{
+        margin-top: -20px;
+    } 
+} 
